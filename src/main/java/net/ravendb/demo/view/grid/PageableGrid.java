@@ -19,7 +19,6 @@ public class PageableGrid<T> extends VerticalLayout {
     private NegaPaginator paginator = new NegaPaginator();
     private Grid<T> grid = new Grid<>();
     private final PageableCallback pageableCallback;
-//    private int size;
 
     public PageableGrid(PageableCallback pageableCallback) {
 //        this.size = PAGE_SIZE;

@@ -239,7 +239,7 @@ The Session implements the [Unit of Work](https://martinfowler.com/eaaCatalog/un
 pattern. This has several implications:  
 * The Session batches requests to the server to minimize the number of round trips over the network.  
 * The Session tracks changes for all the entities that it has either loaded from or stored to the database, and commits 
-them as an ACID transaction when `[session].SaveChanges()` is called.  
+them as an ACID transaction when `[session].saveChanges()` is called.  
 * A single document always resolves to the same instance - i.e. if we try to load a document twice, the second call 
 will load the entity from a local cache rather than going over the network.  
 
@@ -363,7 +363,6 @@ An example are the profile pictures of Patients. This POJO represents attachment
 public class Attachment {
 
     String name;
-    //String mimeType;
     byte[] bytes;
 
     public InputStream getInputStream() {

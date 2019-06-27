@@ -19,10 +19,8 @@ public class PageableGrid<T> extends VerticalLayout {
     private NegaPaginator paginator = new NegaPaginator();
     private Grid<T> grid = new Grid<>();
     private final PageableCallback pageableCallback;
-//    private int size;
 
     public PageableGrid(PageableCallback pageableCallback) {
-//        this.size = PAGE_SIZE;
         paginator.setInitialPage(false);
         paginator.setPage(0);
         paginator.setSize(PAGE_SIZE);
@@ -42,20 +40,6 @@ public class PageableGrid<T> extends VerticalLayout {
         add(grid, paginator);
         setAlignItems(Alignment.CENTER);
     }
-
-//    private void onPageChange() {
-//        /*Pair<Collection<T>, Integer> result = */
-////        grid.setItems(result.getKey());
-////        paginator.setTotal(result.getValue());
-//    }    
-
-//    public void loadFirstPage() {
-//        /*Pair<Collection<T>, Integer> result = */pageableCallback.loadPage(0, PAGE_SIZE);
-//        
-//        grid.setItems(result.getKey());
-//        paginator.setPage(0);
-//        paginator.setTotal(result.getValue());
-//    }
 
     public Grid<T> getGrid() {
         return this.grid;

@@ -21,7 +21,6 @@ public class PageableGrid<T> extends VerticalLayout {
     private final PageableCallback pageableCallback;
 
     public PageableGrid(PageableCallback pageableCallback) {
-//        this.size = PAGE_SIZE;
         paginator.setInitialPage(false);
         paginator.setPage(0);
         paginator.setSize(PAGE_SIZE);

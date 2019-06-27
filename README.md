@@ -363,7 +363,6 @@ An example are the profile pictures of Patients. This POJO represents attachment
 public class Attachment {
 
     String name;
-    //String mimeType;
     byte[] bytes;
 
     public InputStream getInputStream() {

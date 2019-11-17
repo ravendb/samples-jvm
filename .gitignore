@@ -1,5 +1,5 @@
 # Numerous always-ignore extensions
-*.diff
+*.idea*.vs*.diff
 *.err
 *.orig
 *.log
@@ -31,3 +31,8 @@ tmp/
 public/
 target/
 .settings/
+/*.iml
+/src.DotSettings.user
+/src/.vs/VSWorkspaceState.json
+/src/.vs/slnx.sqlite
+/src/.vs/src/v15/.suo

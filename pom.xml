@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.ravendb.demo</groupId>
     <artifactId>hospital-management</artifactId>
@@ -7,7 +9,7 @@
     <packaging>war</packaging>
 
     <properties>
-    	<junit.version>4.12</junit.version>
+        <junit.version>4.12</junit.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,8 +21,8 @@
     <repositories>
         <!-- Repository used by many Vaadin add-ons -->
         <repository>
-             <id>Vaadin Directory</id>
-             <url>http://maven.vaadin.com/vaadin-addons</url>
+            <id>Vaadin Directory</id>
+            <url>http://maven.vaadin.com/vaadin-addons</url>
         </repository>
     </repositories>
 
@@ -48,34 +50,34 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
         </dependency>
-		<dependency>
-  			<groupId>net.ravendb</groupId>
-  			<artifactId>ravendb</artifactId>
-  			<version>LATEST</version>
-		</dependency>
+        <dependency>
+            <groupId>net.ravendb</groupId>
+            <artifactId>ravendb</artifactId>
+            <version>LATEST</version>
+        </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
-	<dependency>
-   			<groupId>org.claspina</groupId>
-   			<artifactId>confirm-dialog</artifactId>
-   			<version>1.0.0</version>
-	</dependency> 
-	<dependency>
-   		<groupId>com.nega</groupId>
-   		<artifactId>negapaginator</artifactId>
-   		<version>1.0.2</version>
-	</dependency>
-	<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-	</dependency>
-		    
+        <dependency>
+            <groupId>org.claspina</groupId>
+            <artifactId>confirm-dialog</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.nega</groupId>
+            <artifactId>negapaginator</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -86,19 +88,19 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.4.11.v20180605</version>
                 <configuration>
-        			<httpConnector>          			
-          				<port>8889</port>
-        			</httpConnector>
+                    <httpConnector>
+                        <port>8889</port>
+                    </httpConnector>
                 </configuration>
             </plugin>
-      		<plugin>
-        		<groupId>org.apache.maven.plugins</groupId>
-        		<artifactId>maven-surefire-plugin</artifactId>
-        		<version>2.12.4</version>
-        			<configuration>
-          				<skipTests>true</skipTests>
-        			</configuration>
-      		</plugin>             
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -119,7 +121,7 @@
             </dependencies>
 
             <build>
-                <plugins>               
+                <plugins>
                     <plugin>
                         <groupId>com.vaadin</groupId>
                         <artifactId>vaadin-maven-plugin</artifactId>

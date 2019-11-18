@@ -80,6 +80,7 @@ examples of specific documents in JSON.
 
 <details><summary>Click to expand POJOs and documents</summary>
 1. The Patient entity:  
+
 ```java
 public class Patient {
     private String id;
@@ -93,6 +94,7 @@ public class Patient {
 }
 ```
 A JSON document of an example Patient containing an array of Visits:  
+
 ```JSON
 {
     "firstName": "Megi",
